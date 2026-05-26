@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak - Hossain Chacha</title>
+    <style>
+        /* GitHub Dark Theme Colors */
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Terminal Window Container */
+        .terminal-window {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mac-style Window Header */
+        .window-header {
+            background-color: #010409;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+
+        .header-title {
+            margin: 0 auto;
+            color: #8b949e;
+            font-size: 0.9em;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        /* Content Area */
+        .window-body {
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        /* Fake Contribution Graph styling (Crescent Moon Shape) */
+        .contribution-graph {
+            display: grid;
+            grid-template-columns: repeat(10, 15px);
+            gap: 4px;
+            justify-content: center;
+            margin-bottom: 30px;
+            animation: glow 3s infinite alternate;
+        }
+
+        .box {
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+            background-color: #161b22;
+            border: 1px solid #ffffff0d;
+        }
+
+        /* Green colors for the graph */
+        .lvl-1 { background-color: #0e4429; }
+        .lvl-2 { background-color: #006d32; }
+        .lvl-3 { background-color: #26a641; }
+        .lvl-4 { background-color: #39d353; box-shadow: 0 0 8px #39d353; }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 2px #26a641); }
+            to { filter: drop-shadow(0 0 10px #39d353); }
+        }
+
+        /* Text Styling */
+        h1 {
+            font-size: 3em;
+            color: #58a6ff;
+            margin: 10px 0;
+            text-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #c9d1d9;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .highlight {
+            color: #3fb950;
+            font-weight: bold;
+        }
+
+        /* Git Commit Logs */
+        .git-log {
+            text-align: left;
+            background-color: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.95em;
+            border: 1px solid #30363d;
+            color: #8b949e;
+        }
+
+        .git-log p {
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+
+        .cmd { color: #58a6ff; font-weight: bold; }
+        .branch { color: #ff7b72; }
+        .msg { color: #a5d6ff; }
+        
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background-color: #c9d1d9;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-window">
+        <div class="window-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <span class="header-title">~/github/eid-wishes</span>
+        </div>
+        
+        <div class="window-body">
+            <div class="contribution-graph">
+                <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box lvl-3"></div><div class="box lvl-4"></div><div class="box lvl-3"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box"></div><div class="box lvl-2"></div><div class="box lvl-4"></div><div class="box"></div><div class="box"></div><div class="box lvl-2"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box lvl-3"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box lvl-4"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box lvl-3"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box"></div><div class="box lvl-2"></div><div class="box lvl-4"></div><div class="box"></div><div class="box"></div><div class="box lvl-1"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box lvl-3"></div><div class="box lvl-4"></div><div class="box lvl-2"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+            </div>
+
+            <h1>Eid Mubarak!</h1>
+            <h2>Dear <span class="highlight">Hossain Chacha</span></h2>
+
+            <div class="git-log">
+                <p><span class="cmd">git</span> commit -m <span class="msg">"Wishing you endless happiness and peace 🌙"</span></p>
+                <p><span class="cmd">git</span> push origin <span class="branch">main</span></p>
+                <p>Status: <span class="highlight">Successfully delivered! 🎉</span> <span class="cursor"></span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
